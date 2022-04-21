@@ -5,6 +5,7 @@ const check = words => {
   try {
     localStorage.clear();
     localStorage.setItem('a', '0'.repeat(words));
+    localStorage.setItem('b', '0'.repeat(words));
     localStorage.clear();
     return true;
   } catch(e) {
